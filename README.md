@@ -1,11 +1,24 @@
-> _Fork_ deze deeltaak en ga aan de slag. 
-De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# creative-coding
 
-# Naam deeltaak
+## Project setup
+```
+npm install
+```
 
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-## Licentie
+### Compiles and minifies for production
+```
+npm run build
+```
 
-![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
+### Lints and fixes files
+```
+npm run lint
+```
 
-This work is licensed under [GNU GPLv3](./LICENSE).
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
