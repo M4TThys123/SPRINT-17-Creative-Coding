@@ -1,0 +1,49 @@
+:root {
+    --zwart: #1b1b1b;
+    --wit: #ffffff;
+    --donker-grijs: #343434;
+    --grijs: #5d5d5d;
+    --blauw: #8cb4ff;
+    --donker-blauw: #182631;
+
+    --background-color: var(--zwart);
+    --text-color: var(--wit);
+    --dark-grey-color: var(--donker-grijs);
+    --light-grey-color: var(--grijs);
+    --blue-color: var(--blauw);
+    --dark-blue-color: var(--donker-blauw);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+/* Remove list styles */
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
