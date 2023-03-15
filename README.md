@@ -9,7 +9,7 @@
 
 
 ## Page transition
-![PageTransition](https://user-images.githubusercontent.com/70703948/225306467-4adc51fe-a327-4cf8-a02a-c4544819e18b.gif)
+![PageTransition](https://user-images.githubusercontent.com/70703948/225306467-4adc51fe-a327-4cf8-a02a-c4544819e18b.gif) <br>
 [🌐 Wiki](https://github.com/M4TThys123/SPRINT-17-Creative-Coding/wiki/Page-Transition/) <br>
 ### 👨‍💻 Techstack
 * GSAP CDN - Animations
@@ -18,7 +18,7 @@
 
 
 ## Shopping Cart
-![Shopping](https://user-images.githubusercontent.com/70703948/225306498-42c276a2-6e41-4994-875c-13e27e463b28.gif)
+![Shopping](https://user-images.githubusercontent.com/70703948/225306498-42c276a2-6e41-4994-875c-13e27e463b28.gif) <br>
 [🌐 Wiki](https://github.com/M4TThys123/SPRINT-17-Creative-Coding/wiki/Shopping-Cart/) <br>
 ### 👨‍💻 Techstack
 * Vue.js CDN
