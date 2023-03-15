@@ -1,6 +1,6 @@
 # Presentatie (`GIF's`)
 ## Skeleton loader
-![Skelet](https://user-images.githubusercontent.com/70703948/225306352-9e197001-aa87-465f-827f-3e4f7d6defd0.gif)
+![Skelet](https://user-images.githubusercontent.com/70703948/225306352-9e197001-aa87-465f-827f-3e4f7d6defd0.gif) <br>
 [🌐 Wiki](https://github.com/M4TThys123/SPRINT-17-Creative-Coding/wiki/Skeleton-loader/) <br>
 ### 👨‍💻 Techstack
 * Vanila HTML, CSS & JavaScript (versie 1)
