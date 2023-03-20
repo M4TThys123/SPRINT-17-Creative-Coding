@@ -11,7 +11,7 @@
     --blauw: #8cb4ff;
     --donker-blauw: #182631;
 
-    --background-color: var(--zwart);
+    --background-color: var(--wit);
     --text-color: var(--wit);
     --dark-grey-color: var(--donker-grijs);
     --light-grey-color: var(--grijs);
@@ -19,7 +19,6 @@
     --dark-blue-color: var(--donker-blauw);
     --prm-page-transition-color: var(--blauw);
     --sec-page-transition-color: var(--dim-gray)
-
 }
 
 /* | Global Reset | */
