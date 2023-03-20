@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Creative-Coding | Home</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <!--    Vue.js CDN-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body id="app">
+    <header>
+        <nav class="" id="navigation">
+            <ul>
+                <li v-for="nav in navigaion">
+                    <a :href="nav.url" class="nav-ancor">{{ nav.name }}</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero__section">
+            <h1 class="hero__title">Dit is de Home Pagina</h1>
+            <a class="hero__link" href="/about.html">Navigeer naar de About Pagina</a>
+        </section>
+    </main>
+
+
+    <div class="page-transition-container">
+        <div class="page-transition"></div>
+        <div class="page-transition"></div>
+    </div>
+
+    <!--    Vue.js CDN-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+
+    <!--    GSAP CDN-->
+    <script src="assets/script/gsap.min.js"></script>
+
+    <!--    Script-->
+    <script src="assets/script/Vue.js"></script>
+    <script src="assets/script/PageTransition.js"></script>
+</body>
+</html>
