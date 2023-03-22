@@ -5,20 +5,20 @@ const navigation = new Vue({
     data: {
         navigaion: [
             {
-                url: '/',
+                url: 'index.html',
                 name: 'Home'
             },
             {
-                url: '/about',
+                url: 'about.html',
                 name: 'Diensten'
             },
             {
-                url: '/about',
-                name: 'Partners'
+                url: 'skeleton.html',
+                name: 'Skeleton Loader'
             },
             {
-                url: '/about',
-                name: 'About'
+                url: 'vue.html',
+                name: 'Vue.js'
             },
         ]
     }
