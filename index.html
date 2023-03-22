@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <link rel="stylesheet" href="style.css">
+
+<!--    &lt;!&ndash; Link to Bootstrap CSS via BootstrapCDN &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">-->
+
+<!--    &lt;!&ndash; Link to BootstrapVue CSS via UNPKG &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="https://unpkg.com/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.css">-->
+
+<!--    &lt;!&ndash; Link to Vue.js via UNPKG &ndash;&gt;-->
+<!--    <script src="https://unpkg.com/vue@2.6.11/dist/vue.min.js"></script>-->
+
+<!--    &lt;!&ndash; Link to Bootstrap JS via BootstrapCDN &ndash;&gt;-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>-->
+
+<!--    &lt;!&ndash; Link to BootstrapVue JS via UNPKG &ndash;&gt;-->
+<!--    <script src="https://unpkg.com/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.js"></script>-->
+
+</head>
+
+<body>
+<header>
+    <nav id="nav" class="nav-bar pl-4 pr-4">
+        <img v-bind:src="logo" alt="" class="nav-img">
+
+        <ul>
+            <li v-for="nav in navigaion">
+                <a :href="nav.url" class="nav-ancor">{{ nav.name }}</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main id="main">
+    <Message message="hello!"></Message>
+    <Product premium="premium"></Product>
+</main>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
