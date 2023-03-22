@@ -17,8 +17,14 @@
     --light-grey-color: var(--grijs);
     --blue-color: var(--blauw);
     --dark-blue-color: var(--donker-blauw);
+
+    /*Page-Transition*/
     --prm-page-transition-color: var(--blauw);
-    --sec-page-transition-color: var(--dim-gray)
+    --sec-page-transition-color: var(--dim-gray);
+
+    /*Skeleton-Loader*/
+    --skeleton-color-light:  hsl(200, 20%, 70%);
+    --skeleton-color-dark:  hsl(200, 20%, 95%);
 }
 
 /* | Global Reset | */
@@ -105,6 +111,87 @@ nav ul a:hover::after {
 }
 
 /* | Main | */
+/* || index.html || */
+
+/* || about.html || */
+
+/* || skeleton.html || */
+.skeleton {
+    opacity: 0.7;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton-text {
+    width: 100%;
+    height: 0.5rem;
+    margin-bottom: 0.25rem;
+    border-radius: 0.125rem;
+}
+
+.skeleton-text:last-child {
+    margin-bottom: 0;
+    width: 80%;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: var(--skeleton-color-light);
+    }
+
+    100% {
+        background-color: var(--skeleton-color-dark);
+    }
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+
+/* Default styling */
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.header {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.header-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    /*word-wrap: none;*/
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+/* || vue.html || */
 
 /* || Page Transition || */
 .page-transition-container {

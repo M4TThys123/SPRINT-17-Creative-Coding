@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Creative-Coding | Skeleton</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <!--    Vue.js CDN-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body id="app">
+    <header>
+        <nav class="" id="navigation">
+            <ul>
+                <li v-for="nav in navigaion">
+                    <a :href="nav.url" class="nav-ancor">{{ nav.name }}</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero__section">
+            <h1 class="hero__title">Dit is de Skeleton-Loader Pagina</h1>
+        </section>
+
+        <div class="grid">
+            <div class="card">
+                <div class="header">
+                    <img
+                            class="header-img skeleton img"
+                            src="https://source.unsplash.com/100x100/?nature"
+                    />
+                    <div class="title" data-title>
+                        <div class="skeleton skeleton-text"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                </div>
+                <div data-body>
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text"></div>
+                </div>
+            </div>
+        </div>
+
+        <template id="card-template">
+            <div class="card">
+                <div class="header">
+                    <img
+                            class="header-img skeleton"
+                            src="https://source.unsplash.com/100x100/?nature"
+                    />
+                    <div class="title" data-title>
+                        <div class="skeleton skeleton-text"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                </div>
+                <div data-body>
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text"></div>
+                </div>
+            </div>
+        </template>
+    </main>
+
+    <!--Page-Transition    -->
+    <div class="page-transition-container">
+        <div class="page-transition"></div>
+        <div class="page-transition"></div>
+    </div>
+
+    <!--    Vue.js CDN-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+
+    <!--    GSAP CDN-->
+    <script src="assets/script/gsap.min.js"></script>
+
+    <!--    Script-->
+    <script src="assets/script/Vue.js"></script>
+    <script src="assets/script/PageTransition.js"></script>
+    <script src="assets/script/SkeletonLoader.js"></script>
+</body>
+</html>
