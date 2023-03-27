@@ -2,26 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Creative-Coding | Over ons</title>
   <link rel="stylesheet" href="assets/styles/style.css">
 
+  <!--    Vue.js CDN-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 </head>
-<body>
+<body id="app">
 <header>
-  <nav>
+  <nav class="" id="navigation">
     <ul>
-      <li>
-        <a href="./">
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="./about.html">
-          Over ons
-        </a>
+      <li v-for="nav in navigaion">
+        <a :href="nav.url" class="nav-ancor">{{ nav.name }}</a>
       </li>
     </ul>
   </nav>
@@ -29,19 +22,25 @@
 
 <main>
   <section class="hero__section">
-    <h1 class="hero__title">Dit is de Home Pagina</h1>
-    <a class="hero__link" href="/about">Navigeer naar de Skeleton Loader</a>
+    <h1 class="hero__title">Dit is de Over ons Pagina</h1>
+    <a class="hero__link" href="skeleton.html">Navigeer naar de Skeleton Loader</a>
   </section>
 </main>
 
-
+<!--Page-Transition    -->
 <div class="page-transition-container">
   <div class="page-transition"></div>
   <div class="page-transition"></div>
 </div>
 
-
+<!--    Vue.js CDN-->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+
+<!--    GSAP CDN-->
+<script src="assets/script/gsap.min.js"></script>
+
+<!--    Script-->
 <script src="assets/script/Vue.js"></script>
+<script src="assets/script/PageTransition.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@ const navigation = new Vue({
             },
             {
                 url: 'about.html',
-                name: 'Diensten'
+                name: 'Over ons'
             },
             {
                 url: 'skeleton.html',
@@ -19,6 +19,10 @@ const navigation = new Vue({
             {
                 url: 'vue.html',
                 name: 'Vue.js'
+            },
+            {
+                url: 'eerstePage.html',
+                name: 'PageTranstition'
             },
         ]
     }

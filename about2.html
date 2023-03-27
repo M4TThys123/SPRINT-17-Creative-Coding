@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Page Transition Eerste Week</title>
+        <link rel="stylesheet" href="/assets/styles/main.css" />
+
+
+        <!--    Vue.js CDN-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    </head>
+
+    <body data-barba="wrapper" id="app">
+        <div class="load-container">
+            <div class="loading-screen"></div>
+        </div>
+
+        <header>
+            <nav class="" id="navigation">
+                <ul>
+                    <li v-for="nav in navigaion">
+                        <a :href="nav.url" class="nav-ancor">{{ nav.name }}</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main data-barba="container" data-barba-namespace="about-section">
+            <div class="header">
+                <h1 class="title animate-this">
+                    about page
+                </h1>
+                <div class="animate-this button">
+                    <a href="index2.html">go back to home</a>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"
+    ></script>
+    <script src="/assets/script/OudePageTransition.js"></script>
+    <script src="assets/script/Vue.js"></script>
+
+</html>
